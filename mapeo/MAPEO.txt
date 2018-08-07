@@ -1,0 +1,40 @@
+
+  {
+    "mappings": {
+      "doc": {
+        "properties": {
+          "created_at": {
+            "type": "date",
+            "format": "EE MMM d HH:mm:ss Z yyyy||dd/MM/yyyy||dd-MM-yyyy||date_optional_time"
+          },
+
+          "favorited":{  
+                "type": "boolean"
+            },
+          
+          "geo":{
+              "type":"geo_point"
+          },
+          
+          "id":{
+              "type":"long"
+          },
+          
+          "user":{
+              "properties":{
+                
+                "id":{
+                "type":"long"    
+                },
+                
+                "created_at":{
+                  "type": "date",
+                  "format": "EE MMM d HH:mm:ss Z yyyy||dd/MM/yyyy||dd-MM-yyyy||date_optional_time"
+              }
+          }
+          }
+        }
+      }
+    }
+}
+
